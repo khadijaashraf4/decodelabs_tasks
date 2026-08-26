@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khadija Ashraf | Portfolio</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161a21;
+    --accent: #5fb0ff;
+    --text: #e8ebf0;
+    --muted: #9aa4b2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 80px 24px 40px;
+    text-align: center;
+    background: linear-gradient(180deg, #1b2028 0%, var(--bg) 100%);
+  }
+  header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 1.1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 100px;
+  }
+  section { margin-bottom: 60px; }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  .card {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #232833;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .card p { color: var(--muted); }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .tag {
+    background: #1e2530;
+    color: var(--accent);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill {
+    background: var(--panel);
+    border: 1px solid #232833;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: var(--muted);
+    border-top: 1px solid #232833;
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  .badge {
+    display: inline-block;
+    background: #1e2530;
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 16px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Khadija Ashraf</h1>
+  <p>Cloud Computing &amp; Web Development</p>
+  <div class="badge">☁ Hosted on Azure Blob Storage</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I'm a student exploring cloud computing, currently building hands-on projects with AWS and Azure. This portfolio site itself is proof-of-concept: it's hosted entirely on Azure Blob Storage, with no traditional server involved.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>The Global Launch — Static Website Hosting</h3>
+      <p>Deployed this very portfolio site using Azure Blob Storage's static website hosting feature, with no dedicated server or VM.</p>
+      <div class="tags">
+        <span class="tag">Azure Blob Storage</span>
+        <span class="tag">Static Hosting</span>
+        <span class="tag">IaaS</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill">Cloud Computing (AWS / Azure)</span>
+      <span class="skill">HTML &amp; CSS</span>
+      <span class="skill">Object Storage</span>
+      <span class="skill">Git</span>
+      <span class="skill">Problem Solving</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:khadijaashrafali@gmail.com" style="color: var(--accent);">khadijaashrafali@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/khadija-ashraf-2569b9342" style="color: var(--accent);" target="_blank">linkedin.com/in/khadija-ashraf-2569b9342</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Khadija Ashraf. Built as part of the DecodeLabs Cloud Computing Internship.
+</footer>
+
+</body>
+</html>
