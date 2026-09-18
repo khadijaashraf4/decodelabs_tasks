@@ -1,0 +1,8 @@
+USE decodelabs_db;
+
+CREATE TABLE Interns (
+    InternID INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Role VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL
+);
